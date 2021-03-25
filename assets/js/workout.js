@@ -19,8 +19,20 @@ async function getExerciseList(exerciseCategoryID) {
   return data;
 }
 
+async function getExerciseInfo(exerciseID) {
+  let url = `https://wger.de/api/v2/exerciseinfo/${exerciseID}`;
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw response.json();
+  }
+
+  const data = await response.json();
+  return data;
+}
+
 // Testing
-getExerciseList(10)
+getExerciseInfo(345)
   .then((data) => {
     console.log(data);
   })
