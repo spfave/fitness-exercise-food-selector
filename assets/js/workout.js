@@ -6,3 +6,24 @@
 
 let workoutURL = "https://wger.de/api/v2/";
 workoutURL += `exercisecategory/?category=10`;
+
+async function getExerciseList(exerciseCategoryID) {
+  let url = `https://wger.de/api/v2/exercise/?category=${exerciseCategoryID}&language=2`;
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw response.json();
+  }
+
+  const data = await response.json();
+  return data;
+}
+
+// Testing
+getExerciseList(10)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
