@@ -4,6 +4,11 @@
 // Exercise info: https://wger.de/api/v2/exerciseinfo/345/
 // Exercise image: https://wger.de/api/v2/exerciseimage/345/thumbnails
 
+// DOM SELECTORS
+const muscleGroupsEl = document.querySelector("#muscle-groups");
+const muscleGrpExerEl = document.querySelector("#muscle-group-exercises");
+
+// FUNCTIONS
 // Call wger API for list of category exercises
 async function getExerciseList(exerciseCategoryID) {
   // Create request url
@@ -38,6 +43,8 @@ async function getExerciseInfo(exerciseID) {
 
 // Create category exercise cards
 function renderExerciseCards(categoryExercises) {
+  muscleGrpExerEl.innerHTML = "";
+
   // Render each category exercise to page
   for (const exercise of categoryExercises) {
     renderExerciseCard(exercise);
@@ -46,27 +53,46 @@ function renderExerciseCards(categoryExercises) {
 
 // Create exercise card and display to screen
 function renderExerciseCard(exercise) {
-  const catExerciseEl = document.querySelector("#category-exercises");
-
-  // Create list item and append to list
+  // Create exercise card content append to muscle group exercises list
   const exerciseCard = document.createElement("a");
   exerciseCard.setAttribute("href", "#");
   exerciseCard.classList.add("card-exer");
-  exerciseCard.dataset.exercise = exercise.id;
+  exerciseCard.dataset.exerciseID = exercise.id;
+
   exerciseCard.innerHTML = `
     <div>
       <h4>${exercise.name}</h4>
     </div>
   `;
-  catExerciseEl.appendChild(exerciseCard);
+  muscleGrpExerEl.appendChild(exerciseCard);
 }
 
+//
+function handleMuscleGroupExercises(event) {
+  event.preventDefault();
+
+  // Get exercise category ID of clicked muscle group
+  // Call wger API to get exercise list for muscle group
+  // if data successfully received display to page
+  const exerciseCatergoryID = event.target.dataset.category;
+  getExerciseList(exerciseCatergoryID)
+    .then((exercises) => {
+      renderExerciseCards(exercises);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+// EVENT LISTENERS
+muscleGroupsEl.addEventListener("click", handleMuscleGroupExercises);
+
 // Testing
-getExerciseList(11)
-  .then((data) => {
-    console.log(data);
-    renderExerciseCards(data);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// getExerciseList(11)
+//   .then((data) => {
+//     console.log(data);
+//     renderExerciseCards(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
