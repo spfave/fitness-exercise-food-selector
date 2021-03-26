@@ -57,7 +57,7 @@ function renderExerciseCard(exercise) {
   const exerciseCard = document.createElement("a");
   exerciseCard.setAttribute("href", "#");
   exerciseCard.classList.add("card-exer");
-  exerciseCard.dataset.exerciseID = exercise.id;
+  exerciseCard.dataset.exercise = exercise.id;
 
   exerciseCard.innerHTML = `
     <div>
@@ -84,8 +84,26 @@ function handleMuscleGroupExercises(event) {
     });
 }
 
+//
+function handleExerciseInfo(event) {
+  event.preventDefault();
+
+  // Get exercise ID of clicked exercise
+  // Call wger API to get details for exercise
+  // if data successfully received display exercise info to page
+  const exerciseID = event.target.closest("a").dataset.exercise;
+  getExerciseInfo(exerciseID)
+    .then((exerciseInfo) => {
+      console.log(exerciseInfo);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
 // EVENT LISTENERS
 muscleGroupsEl.addEventListener("click", handleMuscleGroupExercises);
+muscleGrpExerEl.addEventListener("click", handleExerciseInfo);
 
 // Testing
 // getExerciseList(11)
