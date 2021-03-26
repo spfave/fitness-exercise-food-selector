@@ -17,10 +17,10 @@ async function getExerciseList(exerciseCategoryID) {
 
   // Return data if good resonse
   const data = await response.json();
-  return data;
+  return data.results;
 }
 
-// Call wger API for details on exercise
+// Call wger API for exercise details
 async function getExerciseInfo(exerciseID) {
   // Create request url
   let url = `https://wger.de/api/v2/exerciseinfo/${exerciseID}`;
@@ -34,6 +34,14 @@ async function getExerciseInfo(exerciseID) {
   // Return data if good response
   const data = await response.json();
   return data;
+}
+
+// Create category exercise cards
+function renderExerciseCards(categoryExercises) {
+  // Render each category exercise to page
+  for (const exercise of categoryExercises) {
+    renderExerciseCard(exercise);
+  }
 }
 
 // Testing
