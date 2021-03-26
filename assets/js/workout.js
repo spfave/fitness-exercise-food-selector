@@ -7,6 +7,7 @@
 // DOM SELECTORS
 const muscleGroupsEl = document.querySelector("#muscle-groups");
 const muscleGrpExerEl = document.querySelector("#muscle-group-exercises");
+const exerciseInfoEL = document.querySelector("#exercise-info");
 
 // FUNCTIONS
 // Call wger API for list of category exercises
@@ -65,6 +66,15 @@ function renderExerciseCard(exercise) {
     </div>
   `;
   muscleGrpExerEl.appendChild(exerciseCard);
+}
+
+function renderExerciseInfo(exercise) {
+  // Create exercise info
+  const exerciseInfo = document.createElement("div");
+  exerciseInfo.classList.add();
+
+  exerciseInfo.innerHTML = ``;
+  exerciseInfoEL.appendChild(exerciseInfo);
 }
 
 //
