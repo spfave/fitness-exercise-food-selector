@@ -1,4 +1,6 @@
-document.getElementById("btn1").addEventListener('click', function(e) {
+// New Branch
+
+document.getElementById("btn1").addEventListener('click', function (e) {
     e.preventDefault();
     // console.log("the btn has been clicked");
     console.log(document.getElementById('exampleInputEmail1').value)
