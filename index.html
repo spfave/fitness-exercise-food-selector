@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
+    crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -23,32 +23,49 @@
  </head>
  <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-5 text-center">Food and Fitness</h1>
+        <div class="jumbotron bg-champagne">
+          <h1>Food and Fitness</h1>
         </div>
-    </div>
-  <marquee behavior="slide" direction="left" scrollamount='25'>
-    <div class="row">
-        <div class="column">
-          <img src="./Assets/coverPage Photo2.jpg" id="photo2" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="./Assets/coverPage Photo.jpg" id="photo1" style="width:100%">
-          </div>
-        <div class="column">
-          <img src="./Assets/coverPage Photo3.jpg" id="photo3" style="width:100%">
-        </div>
-    </div>
-  </marquee>
-    <div id="intro">
-      <p>Welcome to our Food and Fitness App! If you are ready to begin your new health journey click 'continue'</p>
-    </div>
-    <br>
-    <div class="btnContainer">
+   </div>
+   <div class="wholeContainer" id="wholeContainer">
+       <marquee behavior="slide" direction="left" scrollamount='25'>
+         <div class="row">
+           <div class="column">
+             <img src="./Assets/coverPage Photo2.jpg" id="photo2" style="width:100%">
+           </div>
+           <div class="column">
+             <img src="./Assets/coverPage Photo.jpg" id="photo1" style="width:100%">
+           </div>
+           <div class="column">
+             <img src="./Assets/coverPage Photo3.jpg" id="photo3" style="width:100%">
+           </div>
+         </div> 
+     </marquee>
+     <div id="intro">
+       <p>Welcome to our Food and Fitness App! If you are ready to begin your new health journey click 'continue'</p>
+     </div>
+     <br>
+     <div class="btnContainer">
         <div class="vertical-center">
-            <input id="continue_button" type="button" value="Continue">
+            <button onclick="continue_button" id="continue_button">Continue</button>
         </div>
+     </div>
+   </div>
+   <div class="userForm" id="userForm">
+     <form>
+       First Name:<br>
+       <input type="text" name="First name" >
+       <br>
+       Last Name:<br>
+       <input type="text" name="First name">
+       <br>
+       <input type="submit" value="submit">
+     </form>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" 
+    crossorigin="anonymous">
+  </script>
+  <script src="./js/script.js"></script>
  </body>
 </html>
