@@ -44,10 +44,28 @@ function renderExerciseCards(categoryExercises) {
   }
 }
 
+// Create exercise card and display to screen
+function renderExerciseCard(exercise) {
+  const catExerciseEl = document.querySelector("#category-exercises");
+
+  // Create list item and append to list
+  const exerciseCard = document.createElement("a");
+  exerciseCard.setAttribute("href", "#");
+  exerciseCard.classList.add("card-exer");
+  exerciseCard.dataset.exercise = exercise.id;
+  exerciseCard.innerHTML = `
+    <div>
+      <h4>${exercise.name}</h4>
+    </div>
+  `;
+  catExerciseEl.appendChild(exerciseCard);
+}
+
 // Testing
-getExerciseInfo(345)
+getExerciseList(11)
   .then((data) => {
     console.log(data);
+    renderExerciseCards(data);
   })
   .catch((error) => {
     console.log(error);
