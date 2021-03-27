@@ -69,23 +69,29 @@ function renderExerciseCard(exercise) {
 }
 
 function renderExerciseInfo(exercise) {
+  //
+  exerciseInfoEL.innerHTML = "";
+
   // Create exercise info
   const exerciseInfo = document.createElement("div");
   exerciseInfo.classList.add();
 
-  exerciseInfo.innerHTML = ``;
+  exerciseInfo.innerHTML = `
+    <h3>${exercise.name}</h3>
+    ${exercise.description}
+  `;
   exerciseInfoEL.appendChild(exerciseInfo);
 }
 
-//
+// Handler for event listener on muscle group
 function handleMuscleGroupExercises(event) {
   event.preventDefault();
 
   // Get exercise category ID of clicked muscle group
   // Call wger API to get exercise list for muscle group
   // if data successfully received display to page
-  const exerciseCatergoryID = event.target.dataset.category;
-  getExerciseList(exerciseCatergoryID)
+  const exerciseCategoryID = event.target.dataset.category;
+  getExerciseList(exerciseCategoryID)
     .then((exercises) => {
       renderExerciseCards(exercises);
     })
@@ -94,7 +100,7 @@ function handleMuscleGroupExercises(event) {
     });
 }
 
-//
+// Handler for event listener on exercise
 function handleExerciseInfo(event) {
   event.preventDefault();
 
@@ -104,7 +110,7 @@ function handleExerciseInfo(event) {
   const exerciseID = event.target.closest("a").dataset.exercise;
   getExerciseInfo(exerciseID)
     .then((exerciseInfo) => {
-      console.log(exerciseInfo);
+      renderExerciseInfo(exerciseInfo);
     })
     .catch((error) => {
       console.log(error);
