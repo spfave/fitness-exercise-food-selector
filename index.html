@@ -28,16 +28,16 @@
         </div>
    </div>
    <div class="wholeContainer" id="wholeContainer">
-       <marquee behavior="slide" direction="left" scrollamount='25'>
+       <marquee behavior="slide" direction="left" scrollamount='75'>
          <div class="row">
            <div class="column">
-             <img src="./Assets/coverPage Photo2.jpg" id="photo2" style="width:100%">
+             <img src="./Assets/coverPage Photo2.jpg" id="photo2" style="width:90%">
            </div>
            <div class="column">
-             <img src="./Assets/coverPage Photo.jpg" id="photo1" style="width:100%">
+             <img src="./Assets/coverPage Photo.jpg" id="photo1" style="width:90%">
            </div>
            <div class="column">
-             <img src="./Assets/coverPage Photo3.jpg" id="photo3" style="width:100%">
+             <img src="./Assets/coverPage Photo3.jpg" id="photo3" style="width:90%">
            </div>
          </div> 
      </marquee>
@@ -47,25 +47,33 @@
      <br>
      <div class="btnContainer">
         <div class="vertical-center">
-            <button onclick="continue_button" id="continue_button">Continue</button>
+          <input id="continue_button" type="button" value="Continue">
         </div>
      </div>
    </div>
    <div class="userForm" id="userForm">
      <form>
        First Name:<br>
-       <input type="text" name="First name" >
+       <input id="firstName" type="text" name="First name" >
        <br>
        Last Name:<br>
-       <input type="text" name="First name">
+       <input id="lastName" type="text" name="Last name">
        <br>
-       <input type="submit" value="submit">
+       <input id="submit_button" type="submit" value="submit">
      </form>
     </div>
+    <div class="welcome">
+      <div class="welcomeDisplay">
+        <h2>Welcome!</h2>
+        <h3>Choose an area of focus</h3>
+      </div>
+    </div> 
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" 
     crossorigin="anonymous">
   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./js/script.js"></script>
  </body>
 </html>

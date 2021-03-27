@@ -10,3 +10,17 @@ function displayUserForm() {
     userForm.setAttribute("style" , "display:block");
     wholeContainer.setAttribute("style", "display: none");
 }
+
+//Returning User Name
+let submitButton = document.getElementById("submit_button")
+let welcomeDisplay = document.querySelector(".welcome")
+
+submitButton.addEventListener("click" , displayWelcome);
+
+function displayWelcome() {
+    $("#userForm").submit(function(e) {
+        e.preventDefault();
+    });
+    welcomeDisplay.setAttribute("style" , "display: block");
+    userForm.setAttribute("style" , "display: none");
+}
