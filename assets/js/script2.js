@@ -1,5 +1,4 @@
 // New_Branch
-
 document.getElementById("btn1").addEventListener('click', function (e) {
     e.preventDefault();
     // console.log("the btn has been clicked");
