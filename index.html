@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
-    crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Food-and-Fitness</title>
- </head>
- <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="jumbotron bg-champagne">
-          <h1>Food and Fitness</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Food-and-Fitness</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron bg-champagne">
+      <h1>Food and Fitness</h1>
+    </div>
+  </div>
+
+  <div class="wholeContainer" id="wholeContainer">
+    <marquee behavior="slide" direction="left" scrollamount='75'>
+      <div class="row">
+        <div class="column">
+          <img src="./assets/images/coverPage Photo2.jpg" id="photo2" style="width:90%">
         </div>
+        <div class="column">
+          <img src="./assets/images/coverPage Photo.jpg" id="photo1" style="width:90%">
+        </div>
+<<<<<<< HEAD
    </div>
    <div class="wholeContainer" id="wholeContainer">
        <marquee behavior="slide" direction="left" scrollamount='75'>
@@ -48,32 +53,87 @@
      <div class="btnContainer">
         <div class="vertical-center">
           <input id="continue_button" type="button" value="Continue">
+=======
+        <div class="column">
+          <img src="./assets/images/coverPage Photo3.jpg" id="photo3" style="width:90%">
+>>>>>>> 7b63ca65afe0ebe175b516b70c5f4dff8c484c5b
         </div>
-     </div>
-   </div>
-   <div class="userForm" id="userForm">
-     <form>
-       First Name:<br>
-       <input id="firstName" type="text" name="First name" >
-       <br>
-       Last Name:<br>
-       <input id="lastName" type="text" name="Last name">
-       <br>
-       <input id="submit_button" type="submit" value="submit">
-     </form>
-    </div>
-    <div class="welcome">
-      <div class="welcomeDisplay">
-        <h2>Welcome!</h2>
-        <h3>Choose an area of focus</h3>
       </div>
-    </div> 
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
-    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" 
-    crossorigin="anonymous">
-  </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    </marquee>
+    <div id="intro">
+      <p>Welcome to our Food and Fitness App! If you are ready to begin your new health journey click 'continue'</p>
+    </div>
+    <br>
+    <div class="btnContainer">
+      <div class="vertical-center">
+        <input id="continue_button" type="button" value="Continue">
+      </div>
+    </div>
+  </div>
+
+  <div class="userForm" id="userForm">
+    <form>
+      First Name:<br>
+      <input id="firstName" type="text" name="First name">
+      <br>
+      Last Name:<br>
+      <input id="lastName" type="text" name="Last name">
+      <br>
+      <input id="submit_button" type="submit" value="submit">
+    </form>
+  </div>
+
+  <div class="welcome">
+    <div class="welcomeDisplay">
+      <h2>Welcome!</h2>
+      <h3>Choose an area of focus</h3>
+    </div>
+
+    <div id="muscle-groups">
+      <a href="#" data-category="11">Chest</a>
+      <a href="#" data-category="10">Abs</a>
+      <a href="#" data-category="13">Shoulders</a>
+      <a href="#" data-category="8">Arms</a>
+      <a href="#" data-category="12">Back</a>
+      <a href="#" data-category="9">Legs</a>
+      <a href="#" data-category="14">Calves</a>
+    </div>
+
+    <div id="muscle-group-exercises">
+    </div>
+
+    <div id="exercise-info">
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="">
+            <label for="exampleInputEmail1">Enter your food of choice</label>
+            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <button id="btn1" class="" type="submit">Submit</button>
+        </form>
+      </div>
+      <a href="" id="url">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 id="recipie" class="card-Recipie"></h5>
+          </div>
+          <img id="image" src="" alt="" />
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
- </body>
+  <script src="./assets/js/workout.js"></script>
+  <script src="./assets/js/script2.js"></script>
+</body>
+
 </html>
