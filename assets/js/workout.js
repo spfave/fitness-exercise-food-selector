@@ -70,6 +70,7 @@ function renderExerciseCard(exercise) {
 
 function renderExerciseInfo(exercise) {
   //
+  muscleGrpExerEl.innerHTML = "";
   exerciseInfoEL.innerHTML = "";
 
   // Create exercise info
