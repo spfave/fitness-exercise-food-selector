@@ -1,9 +1,9 @@
 // New_Branch
-document.getElementById("btn1").addEventListener('click', function (e) {
-    e.preventDefault();
-    // console.log("the btn has been clicked");
-    console.log(document.getElementById('exampleInputEmail1').value)
-    getRecipie(document.getElementById('exampleInputEmail1').value);
+document.getElementById("btn1").addEventListener("click", function (e) {
+  e.preventDefault();
+  // console.log("the btn has been clicked");
+  console.log(document.getElementById("exampleInputEmail1").value);
+  getRecipie(document.getElementById("exampleInputEmail1").value);
 });
 
 function getRecipie(userChoice) {
@@ -42,14 +42,3 @@ function getRecipie(userChoice) {
         document.getElementById("recipeContainer").innerHTML = recipies;
 
     })
-}
-
-{/* <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a> */}
-
