@@ -22,5 +22,7 @@ function displayWelcome() {
         e.preventDefault();
     });
     welcomeDisplay.setAttribute("style" , "display: block");
-    userForm.setAttribute("style" , "display: none");
+    userForm.setAttribute("style", "display: none");
+    
+    window.location.href = "food.html"
 }
