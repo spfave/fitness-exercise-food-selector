@@ -16,8 +16,7 @@ function getRecipie(userChoice) {
         const url = data.hits[0].recipe.url
         const imageurl = data.hits[0].recipe.image
 
-        //document.getElementById("image").setAttribute("src", imageurl)
-        //document.getElementById("url").setAttribute("href", url)
+      
         var recipies = [];
 
         for (let i = 0; i < data.hits.length; i++) {
@@ -34,8 +33,7 @@ function getRecipie(userChoice) {
             </div>
         </a>`;
             recipies.push(recipieContent)
-            // console.log(recipies);
-            //document.getElementById("recipeContainer").append(recipieContent)
+          
         
         }
 
@@ -43,13 +41,4 @@ function getRecipie(userChoice) {
 
     })
 }
-
-{/* <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a> */}
 
