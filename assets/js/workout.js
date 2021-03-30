@@ -52,7 +52,7 @@ function renderExerciseCard(exercise) {
   // Create exercise card content append to muscle group exercises list
   const exerciseCard = document.createElement("a");
   exerciseCard.setAttribute("href", "#");
-  exerciseCard.classList.add("card-exer");
+  exerciseCard.classList.add("card-exer", "list-group-item");
   exerciseCard.dataset.exercise = exercise.id;
 
   exerciseCard.innerHTML = `
