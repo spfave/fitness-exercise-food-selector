@@ -218,3 +218,222 @@
     padding: 0;
   }
   ©
+=======
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0%;
+  font-family: "Michroma", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+a {
+  color: white;
+}
+
+.nav {
+  float: right;
+  font-size: 15px;
+  margin-top: 3.5%;
+}
+
+#horizontal li {
+  list-style-type: none;
+  display: inline;
+  padding: 7px;
+}
+
+.jumbotron {
+  background-color: #8c81ae;
+  color: rgb(255, 255, 255);
+  height: 6rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 3%;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#photo1 {
+  border-radius: 50%;
+  width: 45%;
+}
+
+#photo2 {
+  border-radius: 50%;
+  width: 45%;
+}
+
+#photo3 {
+  border-radius: 50%;
+  width: 45%;
+}
+
+#continue_button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e5e5e;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.userForm {
+  display: none;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#submit_button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e5e5e;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.welcome {
+  display: none;
+}
+
+h2 {
+  margin-top: 0%;
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0%;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .column {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+/* Workout Section */
+.workout-selection {
+  margin-bottom: 20px;
+}
+
+.list-group {
+  list-style: none;
+  background-color: #fefefe;
+  color: #5e5e5e;
+  border-radius: 0;
+  margin: 0;
+}
+
+.list-group .list-group-item:hover {
+  background-color: #f3f3f3;
+  color: #333333;
+}
+
+/* Muscle Groups */
+#muscle-groups.list-group a {
+  display: inline-block;
+  color: inherit;
+}
+
+@media screen and (max-width: 576px) {
+  #muscle-groups.list-group a {
+    display: block;
+  }
+}
+
+#muscle-groups .list-group-item {
+  padding: 1rem;
+}
+
+#muscle-group-exercises a {
+  display: block;
+  border-top: 1px #777 solid;
+  color: inherit;
+  padding: 0.5rem 1rem;
+}
+
+#muscle-group-exercises a p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#exercise-info .card {
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+#exercise-info .card-header h4 {
+  margin-bottom: 0;
+}
+
+#exercise-info .card-section p {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
+}

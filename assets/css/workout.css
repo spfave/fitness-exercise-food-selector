@@ -1,5 +1,5 @@
 /* Tags */
-a {
+/* a {
   text-decoration: none;
 }
 
@@ -12,4 +12,57 @@ a {
 
 .card-exer h4 {
   margin: 0;
+} */
+
+/* List */
+.list-group {
+  list-style: none;
+  background-color: #fefefe;
+  border-radius: 0;
+  margin: 0;
+}
+
+.list-group a {
+  display: inline-block;
+}
+
+.list-group-item {
+  padding: 1rem;
+}
+
+.list-group-item > :last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Workout Section */
+#muscle-group-exercises a {
+  display: block;
+  border-top: 1px #777 solid;
+  padding: 0.5rem 1rem;
+}
+#muscle-group-exercises a:hover {
+  background-color: #f3f3f3;
+}
+
+#muscle-group-exercises a p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#exercise-info .card {
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+#exercise-info .card-header h4 {
+  margin-bottom: 0;
+}
+
+#exercise-info .card-section p {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
 }
