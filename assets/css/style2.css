@@ -1,0 +1,49 @@
+#container {
+  background-color: lightgray;
+  color: white;
+  display: block;
+}
+
+#form-group {
+  padding: 10;
+}
+
+#recipeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* #button1 {
+    background-color: grey;
+    display: block;
+    /* margin-left: auto;
+              margin-right: auto; */
+/* margin-top: 3px;
+    background-color: #5e5e5e;
+    color: #fefefe;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  } */
+
+.form-group {
+}
+
+#btn1 {
+  background-color: grey;
+  display: block;
+  /* margin-left: auto;
+      margin-right: auto; */
+  background-color: #5e5e5e;
+  padding: 3px;
+  margin: 5px;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+#food-container {
+  margin-top: 10px;
+}
