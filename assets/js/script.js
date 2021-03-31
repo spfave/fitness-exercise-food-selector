@@ -24,5 +24,5 @@ function displayWelcome() {
     welcomeDisplay.setAttribute("style" , "display: block");
     userForm.setAttribute("style", "display: none");
     
-    window.location.href = "food.html"
+    //window.location.href = "food.html"
 }
