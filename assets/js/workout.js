@@ -79,8 +79,30 @@ function renderExerciseInfo(exercise) {
       <div class="card-section">
         <p>${exercise.description}</p>
       </div>
+      <div class="card-divider align-center">
+        <div class="card-header">
+          <button id="btn-exer-comp" class="button" type="button">Completed Exercise</button>
+          <button id="btn-exer-cancel" class="button hollow" type="button">Cancel</button>
+        </div>
+      </div>
   `;
   exerciseInfoEL.appendChild(exerciseInfo);
+  document
+    .querySelector("#btn-exer-comp")
+    .addEventListener("click", saveExercise);
+  document
+    .querySelector("#btn-exer-cancel")
+    .addEventListener("click", cancelExercise);
+}
+
+//
+function saveExercise(event) {
+  console.log("test");
+}
+
+//
+function cancelExercise() {
+  console.log("test");
 }
 
 // Handler for event listener on muscle group
@@ -122,11 +144,3 @@ muscleGroupsEl.addEventListener("click", handleMuscleGroupExercises);
 muscleGrpExerEl.addEventListener("click", handleExerciseInfo);
 
 // Testing
-// getExerciseList(11)
-//   .then((data) => {
-//     console.log(data);
-//     renderExerciseCards(data);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
