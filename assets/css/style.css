@@ -185,6 +185,10 @@ h3 {
   }
 }
 
+#muscle-groups #btn-muscle-group-up {
+  display: none;
+}
+
 #muscle-groups .list-group-item {
   padding: 1rem;
 }
@@ -203,6 +207,10 @@ h3 {
   padding: 0;
 }
 
+#exercise-info {
+  margin-top: 20px;
+}
+
 #exercise-info .card {
   border-radius: 5px;
   margin: 20px 0;
@@ -216,4 +224,9 @@ h3 {
   font-size: 1rem;
   text-align: left;
   padding: 0;
+}
+
+#exercise-info .card-header .button {
+  margin: 0 10px;
+  margin-bottom: 0;
 }

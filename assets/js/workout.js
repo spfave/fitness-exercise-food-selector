@@ -1,5 +1,6 @@
 // DOM SELECTORS
 const muscleGroupsEl = document.querySelector("#muscle-groups");
+const btnMuscleExerUp = document.querySelector("#btn-muscle-group-up");
 const muscleGrpExerEl = document.querySelector("#muscle-group-exercises");
 const exerciseInfoEL = document.querySelector("#exercise-info");
 
@@ -38,6 +39,7 @@ async function getExerciseInfo(exerciseID) {
 
 // Create category exercise cards
 function renderExerciseCards(categoryExercises) {
+  btnMuscleExerUp.setAttribute("style", "display: inline-block");
   muscleGrpExerEl.innerHTML = "";
   exerciseInfoEL.innerHTML = "";
 
@@ -63,6 +65,7 @@ function renderExerciseCard(exercise) {
 
 function renderExerciseInfo(exercise) {
   //
+  btnMuscleExerUp.setAttribute("style", "display: none");
   muscleGrpExerEl.innerHTML = "";
   exerciseInfoEL.innerHTML = "";
 
@@ -102,7 +105,7 @@ function saveExercise(event) {
 
 //
 function cancelExercise() {
-  console.log("test");
+  exerciseInfoEL.innerHTML = "";
 }
 
 // Handler for event listener on muscle group
@@ -141,8 +144,18 @@ function handleExerciseInfo(event) {
     });
 }
 
+//
+function handleDismissExerList(event) {
+  if (event.target.classList.contains("clear")) {
+    event.stopPropagation();
+  }
+  btnMuscleExerUp.setAttribute("style", "display: none");
+  muscleGrpExerEl.innerHTML = "";
+}
+
 // EVENT LISTENERS
 muscleGroupsEl.addEventListener("click", handleMuscleGroupExercises);
 muscleGrpExerEl.addEventListener("click", handleExerciseInfo);
+btnMuscleExerUp.addEventListener("click", handleDismissExerList);
 
 // Testing
