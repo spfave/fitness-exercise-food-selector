@@ -1,9 +1,3 @@
-//
-// Exercise categories: https://wger.de/api/v2/exercisecategory/
-// Exercise filtered by category: https://wger.de/api/v2/exercise/?category=10&language=2
-// Exercise info: https://wger.de/api/v2/exerciseinfo/345/
-// Exercise image: https://wger.de/api/v2/exerciseimage/345/thumbnails
-
 // DOM SELECTORS
 const muscleGroupsEl = document.querySelector("#muscle-groups");
 const muscleGrpExerEl = document.querySelector("#muscle-group-exercises");
@@ -45,6 +39,7 @@ async function getExerciseInfo(exerciseID) {
 // Create category exercise cards
 function renderExerciseCards(categoryExercises) {
   muscleGrpExerEl.innerHTML = "";
+  exerciseInfoEL.innerHTML = "";
 
   // Render each category exercise to page
   for (const exercise of categoryExercises) {
@@ -57,14 +52,12 @@ function renderExerciseCard(exercise) {
   // Create exercise card content append to muscle group exercises list
   const exerciseCard = document.createElement("a");
   exerciseCard.setAttribute("href", "#");
-  exerciseCard.classList.add("card-exer");
+  exerciseCard.classList.add("card-exer", "list-group-item");
   exerciseCard.dataset.exercise = exercise.id;
 
   exerciseCard.innerHTML = `
-    <div>
-      <h4>${exercise.name}</h4>
-    </div>
-  `;
+    <p>${exercise.name}</p>
+    `;
   muscleGrpExerEl.appendChild(exerciseCard);
 }
 
@@ -75,11 +68,17 @@ function renderExerciseInfo(exercise) {
 
   // Create exercise info
   const exerciseInfo = document.createElement("div");
-  exerciseInfo.classList.add();
+  exerciseInfo.classList.add("card");
 
   exerciseInfo.innerHTML = `
-    <h3>${exercise.name}</h3>
-    ${exercise.description}
+    <div class="card-divider align-center">
+        <div class="card-header">
+          <h4 class="">${exercise.name}</h4>
+        </div>
+      </div>
+      <div class="card-section">
+        <p>${exercise.description}</p>
+      </div>
   `;
   exerciseInfoEL.appendChild(exerciseInfo);
 }
