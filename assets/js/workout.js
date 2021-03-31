@@ -109,17 +109,19 @@ function cancelExercise() {
 function handleMuscleGroupExercises(event) {
   event.preventDefault();
 
-  // Get exercise category ID of clicked muscle group
-  // Call wger API to get exercise list for muscle group
-  // if data successfully received display to page
-  const exerciseCategoryID = event.target.dataset.category;
-  getExerciseList(exerciseCategoryID)
-    .then((exercises) => {
-      renderExerciseCards(exercises);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  if (event.target.classList.contains("muscle-group")) {
+    // Get exercise category ID of clicked muscle group
+    // Call wger API to get exercise list for muscle group
+    // if data successfully received display to page
+    const exerciseCategoryID = event.target.dataset.category;
+    getExerciseList(exerciseCategoryID)
+      .then((exercises) => {
+        renderExerciseCards(exercises);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 }
 
 // Handler for event listener on exercise
