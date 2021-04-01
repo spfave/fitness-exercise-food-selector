@@ -82,5 +82,4 @@ function logouttoHome() {
     exercise.setAttribute("style" , "display: none");
     history.setAttribute("style" , "display: none");
     logout.setAttribute("style" , "display: none");
-
 }
