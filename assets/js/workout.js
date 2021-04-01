@@ -1,11 +1,6 @@
-//
-// Exercise categories: https://wger.de/api/v2/exercisecategory/
-// Exercise filtered by category: https://wger.de/api/v2/exercise/?category=10&language=2
-// Exercise info: https://wger.de/api/v2/exerciseinfo/345/
-// Exercise image: https://wger.de/api/v2/exerciseimage/345/thumbnails
-
 // DOM SELECTORS
 const muscleGroupsEl = document.querySelector("#muscle-groups");
+const btnMuscleExerUp = document.querySelector("#btn-muscle-group-up");
 const muscleGrpExerEl = document.querySelector("#muscle-group-exercises");
 const exerciseInfoEL = document.querySelector("#exercise-info");
 
@@ -44,7 +39,9 @@ async function getExerciseInfo(exerciseID) {
 
 // Create category exercise cards
 function renderExerciseCards(categoryExercises) {
+  btnMuscleExerUp.setAttribute("style", "display: inline-block");
   muscleGrpExerEl.innerHTML = "";
+  exerciseInfoEL.innerHTML = "";
 
   // Render each category exercise to page
   for (const exercise of categoryExercises) {
@@ -57,48 +54,77 @@ function renderExerciseCard(exercise) {
   // Create exercise card content append to muscle group exercises list
   const exerciseCard = document.createElement("a");
   exerciseCard.setAttribute("href", "#");
-  exerciseCard.classList.add("card-exer");
+  exerciseCard.classList.add("card-exer", "list-group-item");
   exerciseCard.dataset.exercise = exercise.id;
 
   exerciseCard.innerHTML = `
-    <div>
-      <h4>${exercise.name}</h4>
-    </div>
-  `;
+    <p>${exercise.name}</p>
+    `;
   muscleGrpExerEl.appendChild(exerciseCard);
 }
 
 function renderExerciseInfo(exercise) {
   //
+  btnMuscleExerUp.setAttribute("style", "display: none");
   muscleGrpExerEl.innerHTML = "";
   exerciseInfoEL.innerHTML = "";
 
   // Create exercise info
   const exerciseInfo = document.createElement("div");
-  exerciseInfo.classList.add();
+  exerciseInfo.classList.add("card");
 
   exerciseInfo.innerHTML = `
-    <h3>${exercise.name}</h3>
-    ${exercise.description}
+    <div class="card-divider align-center">
+        <div class="card-header">
+          <h4 class="">${exercise.name}</h4>
+        </div>
+      </div>
+      <div class="card-section">
+        <p>${exercise.description}</p>
+      </div>
+      <div class="card-divider align-center">
+        <div class="card-header">
+          <button id="btn-exer-comp" class="button" type="button">Completed Exercise</button>
+          <button id="btn-exer-cancel" class="button hollow" type="button">Cancel</button>
+        </div>
+      </div>
   `;
   exerciseInfoEL.appendChild(exerciseInfo);
+  document
+    .querySelector("#btn-exer-comp")
+    .addEventListener("click", saveExercise);
+  document
+    .querySelector("#btn-exer-cancel")
+    .addEventListener("click", cancelExercise);
+}
+
+//
+function saveExercise(event) {
+  console.log("test");
+}
+
+//
+function cancelExercise() {
+  exerciseInfoEL.innerHTML = "";
 }
 
 // Handler for event listener on muscle group
 function handleMuscleGroupExercises(event) {
   event.preventDefault();
 
-  // Get exercise category ID of clicked muscle group
-  // Call wger API to get exercise list for muscle group
-  // if data successfully received display to page
-  const exerciseCategoryID = event.target.dataset.category;
-  getExerciseList(exerciseCategoryID)
-    .then((exercises) => {
-      renderExerciseCards(exercises);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  if (event.target.classList.contains("muscle-group")) {
+    // Get exercise category ID of clicked muscle group
+    // Call wger API to get exercise list for muscle group
+    // if data successfully received display to page
+    const exerciseCategoryID = event.target.dataset.category;
+    getExerciseList(exerciseCategoryID)
+      .then((exercises) => {
+        renderExerciseCards(exercises);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 }
 
 // Handler for event listener on exercise
@@ -118,16 +144,18 @@ function handleExerciseInfo(event) {
     });
 }
 
+//
+function handleDismissExerList(event) {
+  if (event.target.classList.contains("clear")) {
+    event.stopPropagation();
+  }
+  btnMuscleExerUp.setAttribute("style", "display: none");
+  muscleGrpExerEl.innerHTML = "";
+}
+
 // EVENT LISTENERS
 muscleGroupsEl.addEventListener("click", handleMuscleGroupExercises);
 muscleGrpExerEl.addEventListener("click", handleExerciseInfo);
+btnMuscleExerUp.addEventListener("click", handleDismissExerList);
 
 // Testing
-// getExerciseList(11)
-//   .then((data) => {
-//     console.log(data);
-//     renderExerciseCards(data);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
