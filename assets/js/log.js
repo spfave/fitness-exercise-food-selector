@@ -43,19 +43,40 @@ function createDailyLog() {
 
   //
   for (let day = 0; day < logHistory; day++) {
-    const dateind = moment().subtract(day, "days");
+    const dateInd = moment().subtract(day, "days");
 
     const logRow = document.createElement("tr");
+    logRow.setAttribute("data-date", dateInd.format("YYYYMMDD"));
     logRow.innerHTML = `
-      <td>${dateind.format("MM/DD/YY")}</td>
-      <td class"exercise"></td>
-      <td class"recipe"></td>
+      <td>${dateInd.format("MM/DD/YY")}</td>
+      <td class="exercise"></td>
+      <td class="recipe"></td>
       `;
     logTable.appendChild(logRow);
   }
 }
 
-function renderDailyLog() {}
+function renderDailyLog() {
+  // Load daily log from local storage
+  const log = loadDailyLog();
+
+  for (const [date, entry] of Object.entries(log)) {
+    if (entry.hasOwnProperty("exercise"))
+      renderDayEvents(date, entry.exercise, "exercise");
+    if (entry.hasOwnProperty("recipe"))
+      renderDayEvents(date, entry.recipe, "recipe");
+  }
+}
+
+function renderDayEvents(date, entry, eventType) {
+  // console.log(date);
+  console.log(entry);
+
+  const logRow = document.querySelector(`#log-table tr[data-date="${date}"]`);
+  const logEvent = logRow.querySelector(`.${eventType}`);
+  console.log(logEvent);
+}
 
 // SCRIPT EXECUTION
 createDailyLog();
+renderDailyLog();
