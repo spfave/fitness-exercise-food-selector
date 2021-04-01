@@ -3,7 +3,7 @@ let continueButton = document.getElementById("continue_button")
 let userForm = document.querySelector(".userForm")
 let wholeContainer = document.querySelector(".wholeContainer")
 
-continueButton.addEventListener("click" , displayUserForm);
+//continueButton.addEventListener("click" , displayUserForm);
 
 //Display Form
 function displayUserForm() {
