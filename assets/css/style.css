@@ -230,3 +230,11 @@ h3 {
   margin: 0 10px;
   margin-bottom: 0;
 }
+
+/* Log Section */
+#log table p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
