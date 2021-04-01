@@ -68,13 +68,17 @@ function renderDailyLog() {
   }
 }
 
-function renderDayEvents(date, entry, eventType) {
-  // console.log(date);
-  console.log(entry);
-
+function renderDayEvents(date, eventEntries, eventType) {
+  // Select log element row and event type
   const logRow = document.querySelector(`#log-table tr[data-date="${date}"]`);
   const logEvent = logRow.querySelector(`.${eventType}`);
-  console.log(logEvent);
+
+  // For each event entry - add to log table
+  for (const entry of eventEntries) {
+    const entryEl = document.createElement("p");
+    entryEl.textContent = entry;
+    logEvent.appendChild(entryEl);
+  }
 }
 
 // SCRIPT EXECUTION
