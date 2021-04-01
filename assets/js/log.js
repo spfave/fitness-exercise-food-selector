@@ -1,3 +1,7 @@
+// DOM SELECTORS
+const logTable = document.querySelector("#log-table");
+
+// FUNCTIONS
 function loadDailyLog() {
   // Load daily log from local storage
   let log = localStorage.getItem("dailyLog");
@@ -31,3 +35,27 @@ function saveEventDailyLog(eventType, eventName) {
 
   localStorage.setItem("dailyLog", JSON.stringify(log));
 }
+
+function createDailyLog() {
+  // const date = moment();
+  const logHistory = 14;
+  logTable.innerHTML = "";
+
+  //
+  for (let day = 0; day < logHistory; day++) {
+    const dateind = moment().subtract(day, "days");
+
+    const logRow = document.createElement("tr");
+    logRow.innerHTML = `
+      <td>${dateind.format("MM/DD/YY")}</td>
+      <td class"exercise"></td>
+      <td class"recipe"></td>
+      `;
+    logTable.appendChild(logRow);
+  }
+}
+
+function renderDailyLog() {}
+
+// SCRIPT EXECUTION
+createDailyLog();
