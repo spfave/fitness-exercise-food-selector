@@ -5,11 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- CSS: Foundation, Font Awesome, Google Font -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <!-- CSS: Custom -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Food-and-Fitness</title>
 </head>
@@ -79,21 +81,26 @@
     </div>
 
     <div class="exercise_food" id="exercise_food">
+      <!-- Workout Selection Section -->
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
-            <a href="#" class="list-group-item" data-category="11">Chest</a>
-            <a href="#" class="list-group-item" data-category="10">Abs</a>
-            <a href="#" class="list-group-item" data-category="13">Shoulders</a>
-            <a href="#" class="list-group-item" data-category="8">Arms</a>
-            <a href="#" class="list-group-item" data-category="12">Back</a>
-            <a href="#" class="list-group-item" data-category="9">Legs</a>
-            <a href="#" class="list-group-item" data-category="14">Calves</a>
+            <a href="#" class="muscle-group list-group-item" data-category="11">Chest</a>
+            <a href="#" class="muscle-group list-group-item" data-category="10">Abs</a>
+            <a href="#" class="muscle-group list-group-item" data-category="13">Shoulders</a>
+            <a href="#" class="muscle-group list-group-item" data-category="8">Arms</a>
+            <a href="#" class="muscle-group list-group-item" data-category="12">Back</a>
+            <a href="#" class="muscle-group list-group-item" data-category="9">Legs</a>
+            <a href="#" class="muscle-group list-group-item" data-category="14">Calves</a>
+            <a href="#" id="btn-muscle-group-up" class="list-group-item"><i class="fas fa-chevron-up"></i></a>
           </ul>
         </div>
 
         <div class="grid-container">
           <ul id="muscle-group-exercises" class="list-group">
+            <a href="#" class="card-exer list-group-item">
+              <p>Exercise Name</p>
+            </a>
           </ul>
         </div>
 
@@ -123,11 +130,13 @@
     </div>
   </div>
 
+  <!-- JS: JQuery, Foundation, Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
     </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- JS: Custom -->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/workout.js"></script>
   <script src="./assets/js/script2.js"></script>
