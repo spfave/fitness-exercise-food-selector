@@ -1,66 +1,88 @@
-<!-- New_Branch -->
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="fitness-exercise-food-selector/assets/css/style.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
       integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
       crossorigin="anonymous"
     />
-    <title>Find Meal For Your Ingredients</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
+    <title>Food-and-Fitness</title>
   </head>
+
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Enter your food of choice</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
+    <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron bg-champagne">
+        <h1>
+          Food and Fitness
+          <div class="nav" id="nav">
+            <ul id="horizontal">
+              <li>
+                <a id="homeNav" href="index.html">Home </a>
+              </li>
+              <!-- <li>
+                <a id="userNav" href="#userSignIn">User Sign-In </a>
+              </li>
+              <li>
+                <a id="historyNav" href="#history">History</a>
+              </li> -->
+            </ul>
           </div>
-          <button id="btn1" class="btn btn-primary">Submit</button>
-        </form>
+        </h1>
       </div>
-      <div id="recipeContainer"></div>
-      <!-- <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a> -->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+            <div id="food-container" class="container">
+          <div class="jumbotron">
+            <form>
+              <div class="form-group" style=>
+                <label for="exampleInputEmail1"
+                  >Enter your food of choice</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              </form>
+            </div>
+          <div></div>
+          <div id="button1">
+            <button id="btn1" class="btn btn-primary" 
+            
+            type="submit">
+              Submit
+            </button>
+          </div>
+          <div id="recipeContainer"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
       integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/script2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/workout.js"></script>
+    <script src="./assets/js/script2.js"></script>
   </body>
 </html>

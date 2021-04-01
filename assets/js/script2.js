@@ -1,9 +1,9 @@
 // New_Branch
-document.getElementById("btn1").addEventListener("click", function (e) {
-  e.preventDefault();
-  // console.log("the btn has been clicked");
-  console.log(document.getElementById("exampleInputEmail1").value);
-  getRecipie(document.getElementById("exampleInputEmail1").value);
+document.getElementById("btn1").addEventListener('click', function (e) {
+    e.preventDefault();
+    // console.log("the btn has been clicked");
+    console.log(document.getElementById('exampleInputEmail1').value)
+    getRecipie(document.getElementById('exampleInputEmail1').value);
 });
 
 function getRecipie(userChoice) {
@@ -16,8 +16,7 @@ function getRecipie(userChoice) {
         const url = data.hits[0].recipe.url
         const imageurl = data.hits[0].recipe.image
 
-        //document.getElementById("image").setAttribute("src", imageurl)
-        //document.getElementById("url").setAttribute("href", url)
+      
         var recipies = [];
 
         for (let i = 0; i < data.hits.length; i++) {
@@ -34,11 +33,12 @@ function getRecipie(userChoice) {
             </div>
         </a>`;
             recipies.push(recipieContent)
-            // console.log(recipies);
-            //document.getElementById("recipeContainer").append(recipieContent)
+          
         
         }
 
         document.getElementById("recipeContainer").innerHTML = recipies;
 
     })
+}
+

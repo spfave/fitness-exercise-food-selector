@@ -5,7 +5,7 @@ let wholeContainer = document.querySelector(".wholeContainer")
 let form = document.getElementById("form")
 let welcomeContain = document.querySelector(".welcome")
 
-continueButton.addEventListener("click" , displayUserForm);
+//continueButton.addEventListener("click" , displayUserForm);
 
 // Display Form
 function displayUserForm() {
@@ -25,6 +25,11 @@ function displayWelcome() {
         e.preventDefault();
     });
     welcomeDisplay.setAttribute("style" , "display: block");
+
+    userForm.setAttribute("style", "display: none");
+    
+    //window.location.href = "food.html"
+
     userForm.setAttribute("style" , "display: none");
     document.getElementById("result").innerHTML = document.getElementById("firstName").value + " " + document.getElementById("lastName").value;
 }
@@ -77,4 +82,5 @@ function logouttoHome() {
     exercise.setAttribute("style" , "display: none");
     history.setAttribute("style" , "display: none");
     logout.setAttribute("style" , "display: none");
+
 }
