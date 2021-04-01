@@ -21,13 +21,19 @@
       <div class= "nav" id="nav">
         <ul id="horizontal">
             <li>
-                <a id="homeNav" href="#home">Home </a>
+                <a class="prelogin" id="homeNav" href="#home">Home </a>
             </li>
             <li>
-                <a id="userNav" href="#userSignIn">User Sign-In </a>
+                <a class="prelogin" id="userNav" href="#userSignIn">User Sign-In </a>
             </li>
             <li>
-              <a id="historyNav" href="#history">History</a>
+              <a class="postlogin" id="exercisefoodNav" href="#exercise/recipes">Exercise/Recipes </a>
+            </li>
+            <li>
+              <a class="postlogin" id="historyNav" href="#history">History</a>
+            </li>
+            <li>
+              <a class="postlogin" id="logout" href="#logout">Logout</a>
             </li>
         </ul>
       </div>
@@ -78,7 +84,7 @@
       <h3>Choose an area of focus</h3>
     </div>
 
-   <div class="exercise_food" id="exercise_food">
+   <div class="exercise" id="exercise">
        <div id="muscle-groups">
          <a href="#" data-category="11">Chest</a>
          <a href="#" data-category="10">Abs</a>
@@ -94,27 +100,28 @@
 
        <div id="exercise-info">
        </div>
-
-       <div class="container">
-         <div class="jumbotron">
-           <form>
-             <div class="">
-               <label for="exampleInputEmail1">Enter your food of choice</label>
-               <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
-             </div>
-             <button id="btn1" class="" type="submit">Submit</button>
-           </form>
-         </div>
-         <a href="" id="url">
-           <div class="card" style="width: 18rem">
-             <div class="card-body">
-               <h5 id="recipie" class="card-Recipie"></h5>
-             </div>
-             <img id="image" src="" alt="" />
-           </div>
-         </a>
-       </div>
    </div>
+
+   <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="">
+            <label for="exampleInputEmail1">Enter your food of choice</label>
+            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <button id="btn1" class="" type="submit">Submit</button>
+        </form>
+      </div>
+      <a href="" id="url">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 id="recipie" class="card-Recipie"></h5>
+          </div>
+          <img id="image" src="" alt="" />
+        </div>
+      </a>
+    </div>
+   
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

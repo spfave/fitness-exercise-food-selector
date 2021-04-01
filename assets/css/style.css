@@ -28,6 +28,10 @@ a {
     padding: 7px;
 }
 
+.postlogin {
+    display: none;
+}
+
 .jumbotron {
     background-color: #8c81ae;
     color: rgb(255, 255, 255);
