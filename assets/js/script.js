@@ -5,7 +5,7 @@ let wholeContainer = document.querySelector(".wholeContainer")
 let form = document.getElementById("form")
 let welcomeContain = document.querySelector(".welcome")
 
-//continueButton.addEventListener("click" , displayUserForm);
+continueButton.addEventListener("click" , displayUserForm);
 
 // Display Form
 function displayUserForm() {
