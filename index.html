@@ -29,7 +29,10 @@
               <a id="userNav" href="#userSignIn">User Sign-In </a>
             </li>
             <li>
-              <a class="postlogin" id="exercisefoodNav" href="#exercise/recipes">Exercise/Recipes </a>
+              <a class="postlogin" id="exerciseNav" href="#exerciseNav">Exercise</a>
+            </li>
+            <li>
+              <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
             </li>
             <li>
               <a class="postlogin" id="historyNav" href="#history">History</a>
@@ -42,7 +45,6 @@
       </h1>
     </div>
   </div>
-
   <div class="wholeContainer" id="wholeContainer">
     <marquee behavior="slide" direction="left" scrollamount='75'>
       <div class="row">
@@ -67,7 +69,6 @@
       </div>
     </div>
   </div>
-
   <div class="userForm" id="userForm">
     <form id="form">
       First Name:<br>
@@ -79,15 +80,13 @@
       <input id="submit_button" type="submit" value="submit">
     </form>
   </div>
-
   <div class="welcome">
     <div class="welcomeDisplay">
       <h2>Welcome <span id="result"></span>!</h2>
       <h3>Choose an area of focus</h3>
     </div>
-
-    <div class="exercise_food" id="exercise_food">
-      <!-- Workout Selection Section -->
+    <!-- Workout Selection Section -->
+    <div class="exerciseTable" id="exerciseTable">
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
@@ -101,7 +100,6 @@
             <a href="#" id="btn-muscle-group-up" class="list-group-item"><i class="fas fa-chevron-up"></i></a>
           </ul>
         </div>
-
         <div class="grid-container">
           <ul id="muscle-group-exercises" class="list-group">
             <a href="#" class="card-exer list-group-item">
@@ -109,33 +107,37 @@
             </a>
           </ul>
         </div>
-
         <div id="exercise-info" class="grid-container">
         </div>
       </div>
-
-      <div class="container">
-        <div class="jumbotron">
-          <form>
-            <div class="">
-              <label for="exampleInputEmail1">Enter your food of choice</label>
-              <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            </div>
-            <button id="btn1" class="" type="submit">Submit</button>
-          </form>
-        </div>
-        <a href="" id="url">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 id="recipie" class="card-Recipie"></h5>
-            </div>
-            <img id="image" src="" alt="" />
-          </div>
-        </a>
-      </div>
     </div>
   </div>
-
+  <!--Recipe table-->
+  <div class="foodTable" id="foodTable">
+    <h2>Hope you're hungry!</h2>
+    <h3>What would you like to eat?</h3>
+    <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="">
+            <label for="exampleInputEmail1">Enter your food of choice</label>
+            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <button id="btn1" class="" type="submit">Submit</button>
+        </form>
+      </div>
+      <a href="" id="url">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 id="recipie" class="card-Recipie"></h5>
+          </div>
+          <img id="image" src="" alt="" />
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="history" id="history">
+  </div>
   <!-- JS: JQuery, Foundation, Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
