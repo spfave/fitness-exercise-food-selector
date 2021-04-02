@@ -44,31 +44,15 @@
       </h1>
 
     </div>
-
-    <div class="wholeContainer" id="wholeContainer">
-      <marquee behavior="slide" direction="left" scrollamount="75">
-        <div class="row">
-          <div class="column">
-            <img
-              src="./assets/images/coverPage Photo2.jpg"
-              id="photo2"
-              style="width: 90%"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="./assets/images/coverPage Photo.jpg"
-              id="photo1"
-              style="width: 90%"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="./assets/images/coverPage Photo3.jpg"
-              id="photo3"
-              style="width: 90%"
-            />
-          </div>
+  </div>
+  <div class="wholeContainer" id="wholeContainer">
+    <marquee behavior="slide" direction="left" scrollamount='75'>
+      <div class="row">
+        <div class="column">
+          <img src="./assets/images/coverPage Photo2.jpg" id="photo2" style="width:90%">
+        </div>
+        <div class="column">
+          <img src="./assets/images/coverPage Photo.jpg" id="photo1" style="width:90%">
         </div>
       </marquee>
       <div id="intro">
@@ -97,9 +81,24 @@
       </form>
     </div>
 
-
-
-   <!-- Workout Selection Section -->
+  </div>
+  <div class="userForm" id="userForm">
+    <form id="form">
+      First Name:<br>
+      <input id="firstName" type="text" name="First name">
+      <br>
+      Last Name:<br>
+      <input id="lastName" type="text" name="Last name">
+      <br>
+      <input id="submit_button" type="submit" value="submit">
+    </form>
+  </div>
+  <div class="welcome">
+    <div class="welcomeDisplay">
+      <h2>Welcome <span id="result"></span>!</h2>
+      <h3>Choose an area of focus</h3>
+    </div>
+    <!-- Workout Selection Section -->
     <div class="exerciseTable" id="exerciseTable">
       <div class="workout-selection">
         <div class="grid-container">
@@ -115,33 +114,28 @@
           </ul>
         </div>
 
-
-          <div class="grid-container">
-            <ul id="muscle-group-exercises" class="list-group">
-              <a href="#" class="card-exer list-group-item">
-                <p>Exercise Name</p>
-              </a>
-            </ul>
-          </div>
-
-          <div id="exercise-info" class="grid-container"></div>
+        <div class="grid-container">
+          <ul id="muscle-group-exercises" class="list-group">
+            <a href="#" class="card-exer list-group-item">
+              <p>Exercise Name</p>
+            </a>
+          </ul>
+        </div>
+        <div id="exercise-info" class="grid-container">
         </div>
       </div>
     </div>
-
- </div>
-
- <!--Recipe table-->
- <div class="foodTable" id="foodTable">
+  </div>
+  <!--Recipe table-->
+  <div class="foodTable" id="foodTable">
     <h2>Hope you're hungry!</h2>
     <h3>What would you like to eat?</h3>
-   <div class="container">
+    <div class="container">
       <div class="jumbotron">
         <form>
           <div class="">
             <label for="exampleInputEmail1">Enter your food of choice</label>
             <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
-
           </div>
           <button id="btn1" class="" type="submit">Submit</button>
         </form>
@@ -150,7 +144,7 @@
         <div class="card" style="width: 18rem">
           <div class="card-body">
             <h5 id="recipie" class="card-Recipie"></h5>
-        </div>
+          </div>
           <img id="image" src="" alt="" />
         </div>
       </a>
@@ -166,7 +160,8 @@
   <div class="history" id="history">
 
   </div>
-
+  <div class="history" id="history">
+  </div>
   <!-- JS: JQuery, Foundation, Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
