@@ -102,6 +102,8 @@ function saveExercise(event) {
   const exerciseName = document.querySelector("#card-exer-name").textContent;
 
   saveEventDailyLog("exercise", exerciseName);
+  updateDayEntry("exercise", exerciseName);
+  exerciseInfoEL.innerHTML = "";
 }
 
 //

@@ -81,6 +81,19 @@ function renderDayEvents(date, eventEntries, eventType) {
   }
 }
 
+function updateDayEntry(eventType, eventName) {
+  // Select log element row and event type
+  const logRow = document.querySelector(
+    `#log-table tr[data-date="${moment().format("YYYYMMDD")}"]`
+  );
+  const logEvent = logRow.querySelector(`.${eventType}`);
+
+  //
+  const entryEl = document.createElement("p");
+  entryEl.textContent = eventName;
+  logEvent.appendChild(entryEl);
+}
+
 // SCRIPT EXECUTION
 createDailyLog();
 renderDailyLog();
