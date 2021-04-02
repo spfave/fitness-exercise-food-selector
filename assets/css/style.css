@@ -236,3 +236,15 @@ h3 {
   margin: 0 10px;
   margin-bottom: 0;
 }
+
+/* Recipe Form*/
+.foodTable {
+  display: none;
+  padding-top: 2.5%;
+}
+
+.foodtable h3 {
+  text-align: center;
+  margin-top: 0%;
+  font-size: 25px;
+}
