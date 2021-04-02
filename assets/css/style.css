@@ -30,7 +30,7 @@ a {
 }
 
 .postlogin {
-    display: none;
+  display: none;
 }
 
 .jumbotron {
@@ -237,7 +237,19 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Log Section */
+/* Recipe Form*/
+.foodTable {
+  display: none;
+  padding-top: 2.5%;
+}
+
+.foodtable h3 {
+  text-align: center;
+  margin-top: 0%;
+  font-size: 25px;
+}
+
+/* History Section */
 #log table p {
   font-size: 1rem;
   text-align: left;
