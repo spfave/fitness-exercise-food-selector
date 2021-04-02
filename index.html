@@ -92,7 +92,7 @@
   <div class="welcome">
     <div class="welcomeDisplay">
     </div>
-    
+
 
     <!-- Workout Selection Section -->
     <div class="exerciseTable" id="exerciseTable">
@@ -130,28 +130,27 @@
   <div class="foodTable" id="foodTable">
     <h2>Hope you're hungry!</h2>
     <h3>What would you like to eat?</h3>
-    <div class="container">
+    <div id="food-container" class="container">
       <div class="jumbotron">
         <form>
-          <div class="">
-            <label for="exampleInputEmail1">Enter your food of choice</label>
-            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="exampleInputEmail1">Enter your food of choice</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="button1" class="input-group-button">
+              <button id="btn1" class="btn btn-primary" type="submit">
+                Submit
+              </button>
+            </div>
           </div>
-          <button id="btn1" class="" type="submit">Submit</button>
         </form>
       </div>
-      <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a>
-    </div>
-  </div
 
-  <!-- History --
+      <div id="recipeContainer" class="grid-container">
+      </div>
+    </div>
+  </div>
+
+  <!-- History -->
   <div class="history" id="history">
   </div>
 
@@ -166,18 +165,6 @@
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/workout.js"></script>
   <script src="./assets/js/script2.js"></script>
-</body>
-
-
-<!-- JS: JQuery, Foundation, Moment.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<!-- JS: Custom -->
-<script src="./assets/js/script.js"></script>
-<script src="./assets/js/workout.js"></script>
-<script src="./assets/js/script2.js"></script>
 </body>
 
 </html>
