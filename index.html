@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +14,6 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Food-and-Fitness</title>
 </head>
-
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="jumbotron bg-champagne">
@@ -29,7 +27,10 @@
               <a id="userNav" href="#userSignIn">User Sign-In </a>
             </li>
             <li>
-              <a class="postlogin" id="exercisefoodNav" href="#exercise/recipes">Exercise/Recipes </a>
+              <a class="postlogin" id="exerciseNav" href="#exerciseNav">Exercise</a>
+            </li>
+            <li>
+              <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
             </li>
             <li>
               <a class="postlogin" id="historyNav" href="#history">History</a>
@@ -86,8 +87,8 @@
       <h3>Choose an area of focus</h3>
     </div>
 
-    <div class="exercise_food" id="exercise_food">
-      <!-- Workout Selection Section -->
+   <!-- Workout Selection Section -->
+    <div class="exerciseTable" id="exerciseTable">
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
@@ -113,27 +114,36 @@
         <div id="exercise-info" class="grid-container">
         </div>
       </div>
-
-      <div class="container">
-        <div class="jumbotron">
-          <form>
-            <div class="">
-              <label for="exampleInputEmail1">Enter your food of choice</label>
-              <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            </div>
-            <button id="btn1" class="" type="submit">Submit</button>
-          </form>
-        </div>
-        <a href="" id="url">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 id="recipie" class="card-Recipie"></h5>
-            </div>
-            <img id="image" src="" alt="" />
-          </div>
-        </a>
-      </div>
     </div>
+ </div>
+
+ <!--Recipe table-->
+ <div class="foodTable" id="foodTable">
+    <h2>Hope you're hungry!</h2>
+    <h3>What would you like to eat?</h3>
+   <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="">
+            <label for="exampleInputEmail1">Enter your food of choice</label>
+            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <button id="btn1" class="" type="submit">Submit</button>
+        </form>
+      </div>
+      <a href="" id="url">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 id="recipie" class="card-Recipie"></h5>
+        </div>
+          <img id="image" src="" alt="" />
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="history" id="history">
+    
   </div>
 
   <!-- JS: JQuery, Foundation, Moment.js -->
