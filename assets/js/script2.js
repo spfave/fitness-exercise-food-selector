@@ -30,14 +30,22 @@ function getRecipie(userChoice) {
                 <h5 id="recipie" class="card-Recipie"></h5>
             </div>
             <img id="image" src="${imageurl}" alt="" />
+            <button class="save-recipe"
+                    id="center" style="color:white, background-color: #5e5e5e;">
+                Save Recipe
+            </button>
+            
             </div>
         </a>`;
+            
             recipies.push(recipieContent)
+            
           
         
         }
 
         document.getElementById("recipeContainer").innerHTML = recipies;
+        
 
     })
 }
