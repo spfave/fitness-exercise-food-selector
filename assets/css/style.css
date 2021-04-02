@@ -215,6 +215,10 @@ h3 {
 }
 
 /* History Section */
+.history {
+  display: none;
+}
+
 #history table thead tr {
   background-color: #8c81ae;
   color: rgb(255, 255, 255);

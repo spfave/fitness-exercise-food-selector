@@ -6,6 +6,7 @@ let form = document.getElementById("form");
 let welcomeContain = document.querySelector(".welcome");
 let foodTable = document.getElementById("foodTable");
 let exerciseTable = document.getElementById("exerciseTable");
+let historyTable = document.getElementById("historyTable");
 continueButton.addEventListener("click", displayUserForm);
 
 // Display Form
@@ -40,7 +41,7 @@ let home = document.getElementById("homeNav");
 let userSignin = document.getElementById("userNav");
 let exerciseNav = document.getElementById("exerciseNav");
 let foodNav = document.getElementById("foodNav");
-let history = document.getElementById("historyNav");
+let historyNav = document.getElementById("historyNav");
 let logout = document.getElementById("logout");
 let userNav = document.getElementById("userNav");
 let homeNav = document.getElementById("homeNav");
@@ -64,7 +65,7 @@ submitButton.addEventListener("click", showhideNav);
 function showhideNav() {
   exerciseNav.setAttribute("style", "display:inline");
   foodNav.setAttribute("style", "display:inline");
-  history.setAttribute("style", "display:inline");
+  historyNav.setAttribute("style", "display:inline");
   logout.setAttribute("style", "display:inline");
   homeNav.setAttribute("style", "display:none");
   userNav.setAttribute("style", "display:none");
@@ -80,9 +81,10 @@ function logouttoHome() {
   userNav.setAttribute("style", "display: inline");
   exerciseNav.setAttribute("style", "display: none");
   foodNav.setAttribute("style", "display: none");
-  history.setAttribute("style", "display: none");
+  historyNav.setAttribute("style", "display: none");
   logout.setAttribute("style", "display: none");
   foodTable.setAttribute("style", "display: none");
+  historyTable.setAttribute("style", "display: none");
 }
 
 foodNav.addEventListener("click", displayFoodTable);
@@ -96,7 +98,7 @@ function displayFoodTable() {
   userNav.setAttribute("style", "display: none");
   exerciseNav.setAttribute("style", "display: inline");
   foodNav.setAttribute("style", "display: inline");
-  history.setAttribute("style", "display: inline");
+  historyNav.setAttribute("style", "display: inline");
   logout.setAttribute("style", "display: inline");
 }
 
@@ -116,19 +118,19 @@ function displayExercisetable() {
   logout.setAttribute("style", "display: inline");
 }
 
-exerciseNav.addEventListener("click", displayExercisetable);
+history.addEventListener("click", displayHistory);
 //History table
-function displayExercisetable() {
+function displayHistory() {
   //exerciseTable.setAttribute("style" , "display: block");
   wholeContainer.setAttribute("style", "display: none");
   foodTable.setAttribute("style", "display: none");
   userForm.setAttribute("style", "display: none");
-  welcomeContain.setAttribute("style", "display: block");
+  welcomeContain.setAttribute("style", "display: none");
   homeNav.setAttribute("style", "display: none");
   userNav.setAttribute("style", "display: none");
   exerciseNav.setAttribute("style", "display: inline");
   foodNav.setAttribute("style", "display: inline");
-  history.setAttribute("style", "display: inline");
+  historyNav.setAttribute("style", "display: inline");
   logout.setAttribute("style", "display: inline");
 }
 
