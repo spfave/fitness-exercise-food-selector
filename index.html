@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- CSS: Foundation, Font Awesome, Google Font -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS: Custom -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Food-and-Fitness</title>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="jumbotron bg-champagne">
-        <h1>
-          Food and Fitness
-          <div class="nav" id="nav">
-            <ul id="horizontal">
-              <li>
-                <a id="homeNav" href="#home">Home </a>
-              </li>
-              <li>
-                <a id="userNav" href="#userSignIn">User Sign-In </a>
-              </li>
-              <li>
-                <a class="postlogin" id="exerciseNav" href="#exerciseNav"
-                  >Exercise</a
-                >
-              </li>
-              <li>
-                <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
-              </li>
-              <li>
-                <a class="postlogin" id="historyNav" href="#history">History</a>
-              </li>
-              <li>
-                <a class="postlogin" id="logout" href="#logout">Logout</a>
-              </li>
-            </ul>
-          </div>
-        </h1>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- CSS: Foundation, Font Awesome, Google Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <!-- CSS: Custom -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Food-and-Fitness</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron bg-champagne">
+      <h1>Food and Fitness
+        <div class="nav" id="nav">
+          <ul id="horizontal">
+            <li>
+              <a id="homeNav" href="#home">Home </a>
+            </li>
+            <li>
+              <a id="userNav" href="#userSignIn">User Sign-In </a>
+            </li>
+            <li>
+              <a class="postlogin" id="exerciseNav" href="#exerciseNav">Exercise</a>
+            </li>
+            <li>
+              <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
+            </li>
+            <li>
+              <a class="postlogin" id="historyNav" href="#history">History</a>
+            </li>
+            <li>
+              <a class="postlogin" id="logout" href="#logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </h1>
+
     </div>
 
     <div class="wholeContainer" id="wholeContainer">
@@ -110,58 +97,24 @@
       </form>
     </div>
 
-    <div class="welcome">
-      <div class="welcomeDisplay">
-        <h2>Welcome <span id="result"></span>!</h2>
-        <h3>Choose an area of focus</h3>
-      </div>
 
-      <!-- Workout Selection Section -->
-      <div class="exerciseTable" id="exerciseTable">
-        <div class="workout-selection">
-          <div class="grid-container">
-            <ul id="muscle-groups" class="list-group">
-              <a
-                href="#"
-                class="muscle-group list-group-item"
-                data-category="11"
-                >Chest</a
-              >
-              <a
-                href="#"
-                class="muscle-group list-group-item"
-                data-category="10"
-                >Abs</a
-              >
-              <a
-                href="#"
-                class="muscle-group list-group-item"
-                data-category="13"
-                >Shoulders</a
-              >
-              <a href="#" class="muscle-group list-group-item" data-category="8"
-                >Arms</a
-              >
-              <a
-                href="#"
-                class="muscle-group list-group-item"
-                data-category="12"
-                >Back</a
-              >
-              <a href="#" class="muscle-group list-group-item" data-category="9"
-                >Legs</a
-              >
-              <a
-                href="#"
-                class="muscle-group list-group-item"
-                data-category="14"
-                >Calves</a
-              >
-              <a href="#" id="btn-muscle-group-up" class="list-group-item"
-                ><i class="fas fa-chevron-up"></i
-              ></a>
-            </ul>
-          </div>
+
+   <!-- Workout Selection Section -->
+    <div class="exerciseTable" id="exerciseTable">
+      <div class="workout-selection">
+        <div class="grid-container">
+          <ul id="muscle-groups" class="list-group">
+            <a href="#" class="muscle-group list-group-item" data-category="11">Chest</a>
+            <a href="#" class="muscle-group list-group-item" data-category="10">Abs</a>
+            <a href="#" class="muscle-group list-group-item" data-category="13">Shoulders</a>
+            <a href="#" class="muscle-group list-group-item" data-category="8">Arms</a>
+            <a href="#" class="muscle-group list-group-item" data-category="12">Back</a>
+            <a href="#" class="muscle-group list-group-item" data-category="9">Legs</a>
+            <a href="#" class="muscle-group list-group-item" data-category="14">Calves</a>
+            <a href="#" id="btn-muscle-group-up" class="list-group-item"><i class="fas fa-chevron-up"></i></a>
+          </ul>
+        </div>
+
 
           <div class="grid-container">
             <ul id="muscle-group-exercises" class="list-group">
@@ -176,37 +129,50 @@
       </div>
     </div>
 
-    <!--Recipe table-->
-    <div class="foodTable" id="foodTable">
-      <h2>Hope you're hungry!</h2>
-      <h3>What would you like to eat?</h3>
-      <div class="container">
-        <div class="jumbotron">
-          <form>
-            <div class="">
-              <label for="exampleInputEmail1">Enter your food of choice</label>
-              <input
-                type="text"
-                class=""
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <button id="btn1" class="" type="submit">Submit</button>
-          </form>
-        </div>
-        <a href="" id="url">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 id="recipie" class="card-Recipie"></h5>
-            </div>
-            <img id="image" src="" alt="" />
+ </div>
+
+ <!--Recipe table-->
+ <div class="foodTable" id="foodTable">
+    <h2>Hope you're hungry!</h2>
+    <h3>What would you like to eat?</h3>
+   <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="">
+            <label for="exampleInputEmail1">Enter your food of choice</label>
+            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+
           </div>
-        </a>
+          <button id="btn1" class="" type="submit">Submit</button>
+        </form>
       </div>
+      <a href="" id="url">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 id="recipie" class="card-Recipie"></h5>
+        </div>
+          <img id="image" src="" alt="" />
+        </div>
+      </a>
     </div>
 
-    <div class="history" id="history"></div>
+
+  <div class="history" id="history">
+    
+  </div>
+
+  <!-- JS: JQuery, Foundation, Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- JS: Custom -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/workout.js"></script>
+  <script src="./assets/js/script2.js"></script>
+</body>
+
 
     <!-- JS: JQuery, Foundation, Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
