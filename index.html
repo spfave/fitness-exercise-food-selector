@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Food-and-Fitness</title>
 </head>
+
 <body>
+  <!-- Header -->
   <div class="jumbotron jumbotron-fluid">
     <div class="jumbotron bg-champagne">
       <h1>Food and Fitness
@@ -42,9 +44,10 @@
           </ul>
         </div>
       </h1>
-
     </div>
   </div>
+
+  <!-- Images -->
   <div class="wholeContainer" id="wholeContainer">
     <marquee behavior="slide" direction="left" scrollamount='75'>
       <div class="row">
@@ -54,52 +57,49 @@
         <div class="column">
           <img src="./assets/images/coverPage Photo.jpg" id="photo1" style="width:90%">
         </div>
-      </marquee>
-      <div id="intro">
-        <p>
-          Welcome to our Food and Fitness App! If you are ready to begin your
-          new health journey click 'continue'
-        </p>
-      </div>
-      <br />
-      <div class="btnContainer">
-        <div class="vertical-center">
-          <input id="continue_button" type="button" value="Continue" />
+        <div class="column">
+          <img src="./assets/images/coverPage Photo3.jpg" id="photo3" style="width:90%">
         </div>
+    </marquee>
+    <div id="intro">
+      <p>
+        Welcome to our Food and Fitness App! If you are ready to begin your
+        new health journey click 'continue'
+      </p>
+    </div>
+    <br />
+    <div class="btnContainer">
+      <div class="vertical-center">
+        <input id="continue_button" type="button" value="Continue" />
       </div>
     </div>
-
-    <div class="userForm" id="userForm">
-      <form id="form">
-        First Name:<br />
-        <input id="firstName" type="text" name="First name" />
-        <br />
-        Last Name:<br />
-        <input id="lastName" type="text" name="Last name" />
-        <br />
-        <input id="submit_button" type="submit" value="submit" />
-      </form>
-    </div>
-
   </div>
+
+  <!-- Sign In Form -->
   <div class="userForm" id="userForm">
     <form id="form">
-      First Name:<br>
-      <input id="firstName" type="text" name="First name">
-      <br>
-      Last Name:<br>
-      <input id="lastName" type="text" name="Last name">
-      <br>
-      <input id="submit_button" type="submit" value="submit">
+      First Name:<br />
+      <input id="firstName" type="text" name="First name" />
+      <br />
+      Last Name:<br />
+      <input id="lastName" type="text" name="Last name" />
+      <br />
+      <input id="submit_button" type="submit" value="submit" />
     </form>
   </div>
+
+  <!-- Welcome -->
   <div class="welcome">
     <div class="welcomeDisplay">
+      <!-- Move h2, h3 into workselection area -->
       <h2>Welcome <span id="result"></span>!</h2>
       <h3>Choose an area of focus</h3>
     </div>
+    <!-- </div> -->
+
     <!-- Workout Selection Section -->
     <div class="exerciseTable" id="exerciseTable">
+
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
@@ -121,11 +121,13 @@
             </a>
           </ul>
         </div>
+
         <div id="exercise-info" class="grid-container">
         </div>
       </div>
     </div>
   </div>
+
   <!--Recipe table-->
   <div class="foodTable" id="foodTable">
     <h2>Hope you're hungry!</h2>
@@ -149,19 +151,13 @@
         </div>
       </a>
     </div>
-
-
-  <h3>TesT</h3>
-  <h3>TesT</h3>
-  <h3>TesT</h3>
-  <h3>TesT</h3>
-  <h3>TesT</h3>
-
-  <div class="history" id="history">
-
   </div>
+
+  <!-- History -->
   <div class="history" id="history">
   </div>
+
+
   <!-- JS: JQuery, Foundation, Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
@@ -175,17 +171,15 @@
 </body>
 
 
-    <!-- JS: JQuery, Foundation, Moment.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- JS: Custom -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/workout.js"></script>
-    <script src="./assets/js/script2.js"></script>
-  </body>
+<!-- JS: JQuery, Foundation, Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!-- JS: Custom -->
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/workout.js"></script>
+<script src="./assets/js/script2.js"></script>
+</body>
+
 </html>
