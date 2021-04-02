@@ -236,3 +236,30 @@ h3 {
   margin: 0 10px;
   margin-bottom: 0;
 }
+
+#container {
+  background-color: lightgray;
+  color: white;
+  display: block;
+}
+
+#form-group {
+  padding: 10;
+}
+
+#recipeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#btn1.btn.btn-primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e5e5e;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout API Testing</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workout API Testing</title>
+    <!-- CSS: Foundation, Font Awesome, Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS: Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-  <!-- CSS: Foundation, Font Awesome, Google fonts -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <!-- CSS: Custom -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <body>
+    <div class="grid-container">
+      <ul id="muscle-groups" class="list-group">
+        <a href="#" class="list-group-item" data-category="11">Chest</a>
+        <a href="#" class="list-group-item" data-category="10">Abs</a>
+        <a href="#" class="list-group-item" data-category="13">Shoulders</a>
+        <a href="#" class="list-group-item" data-category="8">Arms</a>
+        <a href="#" class="list-group-item" data-category="12">Back</a>
+        <a href="#" class="list-group-item" data-category="9">Legs</a>
+        <a href="#" class="list-group-item" data-category="14">Calves</a>
+      </ul>
+    </div>
 
-<body>
-
-  <div class="grid-container">
-    <ul id="muscle-groups" class="list-group">
-      <a href="#" class="list-group-item" data-category="11">Chest</a>
-      <a href="#" class="list-group-item" data-category="10">Abs</a>
-      <a href="#" class="list-group-item" data-category="13">Shoulders</a>
-      <a href="#" class="list-group-item" data-category="8">Arms</a>
-      <a href="#" class="list-group-item" data-category="12">Back</a>
-      <a href="#" class="list-group-item" data-category="9">Legs</a>
-      <a href="#" class="list-group-item" data-category="14">Calves</a>
-    </ul>
-  </div>
-
-  <div class="grid-container">
-    <ul id="muscle-group-exercises" class="list-group">
-      <!-- <a href="#" class="card-exer list-group-item">
+    <div class="grid-container">
+      <ul id="muscle-group-exercises" class="list-group">
+        <!-- <a href="#" class="card-exer list-group-item">
         <p>Exercise Name</p>
       </a> -->
-    </ul>
-  </div>
+      </ul>
+    </div>
 
-  <div id="exercise-info" class="grid-container">
-    <!-- <div class="card">
+    <div id="exercise-info" class="grid-container">
+      <!-- <div class="card">
       <div class="card-divider align-center">
         <div class="card-header">
           <h4 class="">Exercise Title</h4>
@@ -56,15 +65,16 @@
         </div>
       </div>
     </div> -->
-  </div>
+    </div>
 
-  <!-- JS: JQuery, Foundation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
-    </script>
-  <!-- JS Custom -->
-  <script src="./assets/js/workout.js"></script>
-</body>
-
+    <!-- JS: JQuery, Foundation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS Custom -->
+    <script src="./assets/js/workout.js"></script>
+  </body>
 </html>
