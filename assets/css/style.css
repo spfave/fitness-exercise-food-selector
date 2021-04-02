@@ -13,6 +13,7 @@ h1 {
 a {
   color: white;
 }
+
 /*Icon bar in header*/
 .nav {
   float: right;
@@ -45,6 +46,7 @@ p {
   font-size: 30px;
   padding-top: 3%;
 }
+
 /*Photos displayed on page*/
 .row {
   display: flex;
@@ -135,6 +137,7 @@ h3 {
     font-size: 15px;
   }
 }
+
 /* Workout Section */
 .workout-selection {
   margin-bottom: 20px;
@@ -150,6 +153,7 @@ h3 {
   background-color: #f3f3f3;
   color: #333333;
 }
+
 /* Muscle Groups */
 #muscle-groups.list-group a {
   display: inline-block;
@@ -211,7 +215,12 @@ h3 {
 }
 
 /* History Section */
-#log table p {
+#history table thead tr {
+  background-color: #8c81ae;
+  color: rgb(255, 255, 255);
+}
+
+#log-table p {
   font-size: 1rem;
   text-align: left;
   margin: 0;
