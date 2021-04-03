@@ -80,6 +80,7 @@ p {
 .userForm {
   display: none;
   text-align: center;
+  margin-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -94,6 +95,7 @@ p {
 }
 .welcome {
   display: none;
+  margin-top: 50px;
 }
 h2 {
   margin-top: 0%;
@@ -245,6 +247,7 @@ h3 {
 /* History Section */
 .historyTable {
   display: none;
+  margin-top: 50px;
 }
 
 #historyTable table thead tr {
