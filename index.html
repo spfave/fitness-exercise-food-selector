@@ -36,7 +36,7 @@
               <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
             </li>
             <li>
-              <a class="postlogin" id="historyNav" href="#history">History</a>
+              <a class="postlogin" id="historyNav" href="#historyNav">History</a>
             </li>
             <li>
               <a class="postlogin" id="logout" href="#logout">Logout</a>
@@ -62,8 +62,8 @@
         </div>
     </marquee>
     <div id="intro">
-      <p>
-        Welcome to our Food and Fitness App! If you are ready to begin your
+      <p class="grid-container">
+        Welcome to our Food and Fitness App! <br> If you are ready to begin your
         new health journey click 'continue'
       </p>
     </div>
@@ -114,9 +114,6 @@
 
         <div class="grid-container">
           <ul id="muscle-group-exercises" class="list-group">
-            <a href="#" class="card-exer list-group-item">
-              <p>Exercise Name</p>
-            </a>
           </ul>
         </div>
 
@@ -151,7 +148,24 @@
   </div>
 
   <!-- History -->
-  <div class="history" id="history">
+  <div class="historyTable" id="historyTable">
+    <h2>Daily Log</h2>
+    <h3>Check out all you've done</h3>
+
+    <div class="grid-container">
+      <table class="hover">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Exercises</th>
+            <th>Recipes</th>
+          </tr>
+        </thead>
+
+        <tbody id="log-table">
+        </tbody>
+      </table>
+    </div>
   </div>
 
 
@@ -163,6 +177,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <!-- JS: Custom -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/log.js"></script>
   <script src="./assets/js/workout.js"></script>
   <script src="./assets/js/script2.js"></script>
 </body>
