@@ -100,6 +100,7 @@ function displayFoodTable() {
   foodNav.setAttribute("style", "display: inline");
   historyNav.setAttribute("style", "display: inline");
   logout.setAttribute("style", "display: inline");
+  historyTable.setAttribute("style", "display: none");
 }
 
 exerciseNav.addEventListener("click", displayExercisetable);
@@ -114,11 +115,12 @@ function displayExercisetable() {
   userNav.setAttribute("style", "display: none");
   exerciseNav.setAttribute("style", "display: inline");
   foodNav.setAttribute("style", "display: inline");
-  history.setAttribute("style", "display: inline");
+  historyNav.setAttribute("style", "display: inline");
   logout.setAttribute("style", "display: inline");
+  historyTable.setAttribute("style", "display: none");
 }
 
-history.addEventListener("click", displayHistory);
+historyNav.addEventListener("click", displayHistory);
 //History table
 function displayHistory() {
   //exerciseTable.setAttribute("style" , "display: block");
@@ -132,35 +134,7 @@ function displayHistory() {
   foodNav.setAttribute("style", "display: inline");
   historyNav.setAttribute("style", "display: inline");
   logout.setAttribute("style", "display: inline");
+  historyTable.setAttribute("style", "display: block");
 }
 
-// foodNav.addEventListener("click", displayFoodTable);
-// //Recipe Table
-// function displayFoodTable() {
-//   wholeContainer.setAttribute("style", "display: none");
-//   foodTable.setAttribute("style", "display:block");
-//   userForm.setAttribute("style", "display: none");
-//   welcomeContain.setAttribute("style", "display: none");
-//   homeNav.setAttribute("style", "display: none");
-//   userNav.setAttribute("style", "display: none");
-//   exerciseNav.setAttribute("style", "display: inline");
-//   foodNav.setAttribute("style", "display: inline");
-//   history.setAttribute("style", "display: inline");
-//   logout.setAttribute("style", "display: inline");
-// }
-
-// exerciseNav.addEventListener("click", displayExercisetable);
-// //Exercise table
-// function displayExercisetable() {
-//   //exerciseTable.setAttribute("style" , "display: block");
-//   wholeContainer.setAttribute("style", "display: none");
-//   foodTable.setAttribute("style", "display: none");
-//   userForm.setAttribute("style", "display: none");
-//   welcomeContain.setAttribute("style", "display: block");
-//   homeNav.setAttribute("style", "display: none");
-//   userNav.setAttribute("style", "display: none");
-//   exerciseNav.setAttribute("style", "display: inline");
-//   foodNav.setAttribute("style", "display: inline");
-//   history.setAttribute("style", "display: inline");
-//   logout.setAttribute("style", "display: inline");
-// }
+//

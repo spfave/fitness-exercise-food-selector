@@ -202,6 +202,34 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Food */
+#form-group {
+  padding: 10;
+}
+
+#recipeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#btn1 {
+  background-color: grey;
+  display: block;
+  /* margin-left: auto;
+      margin-right: auto; */
+  background-color: #5e5e5e;
+  padding: 3px;
+  margin: 5px;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+#food-container {
+  margin-top: 10px;
+}
+
 /* Recipe Form*/
 .foodTable {
   display: none;
@@ -215,11 +243,11 @@ h3 {
 }
 
 /* History Section */
-.history {
+.historyTable {
   display: none;
 }
 
-#history table thead tr {
+#historyTable table thead tr {
   background-color: #8c81ae;
   color: rgb(255, 255, 255);
 }

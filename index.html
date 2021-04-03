@@ -91,15 +91,13 @@
   <!-- Welcome -->
   <div class="welcome">
     <div class="welcomeDisplay">
-      <!-- Move h2, h3 into workselection area -->
-      <h2>Welcome <span id="result"></span>!</h2>
-      <h3>Choose an area of focus</h3>
     </div>
-    <!-- </div> -->
+
 
     <!-- Workout Selection Section -->
     <div class="exerciseTable" id="exerciseTable">
-
+      <h2>Welcome <span id="result"></span>!</h2>
+      <h3>Choose an area of focus</h3>
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
@@ -129,29 +127,28 @@
   <div class="foodTable" id="foodTable">
     <h2>Hope you're hungry!</h2>
     <h3>What would you like to eat?</h3>
-    <div class="container">
+    <div id="food-container" class="container">
       <div class="jumbotron">
         <form>
-          <div class="">
-            <label for="exampleInputEmail1">Enter your food of choice</label>
-            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="exampleInputEmail1">Enter your food of choice</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="button1" class="input-group-button">
+              <button id="btn1" class="btn btn-primary" type="submit">
+                Submit
+              </button>
+            </div>
           </div>
-          <button id="btn1" class="" type="submit">Submit</button>
         </form>
       </div>
-      <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a>
+
+      <div id="recipeContainer" class="grid-container">
+      </div>
     </div>
   </div>
 
   <!-- History -->
-  <div class="historyTable" id="history">
+  <div class="historyTable" id="historyTable">
     <h2>Daily Log</h2>
     <h3>Check out all you've done</h3>
 
