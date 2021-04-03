@@ -75,20 +75,19 @@ function renderExerciseInfo(exercise) {
 
   exerciseInfo.innerHTML = `
     <div class="card-divider align-center">
-        <div class="card-header">
-          <h4 class="">${exercise.name}</h4>
-        </div>
+      <div class="card-header">
+        <h4 id="card-exer-name">${exercise.name}</h4>
       </div>
-      <div class="card-section">
-        <p>${exercise.description}</p>
+    </div>
+    <div class="card-section">
+      <p>${exercise.description}</p>
+    </div>
+    <div class="card-divider align-center">
+      <div class="card-header">
+        <button id="btn-exer-comp" class="button" type="button">Completed Exercise</button>
+        <button id="btn-exer-cancel" class="button hollow" type="button">Cancel</button>
       </div>
-      <div class="card-divider align-center">
-        <div class="card-header">
-          <button id="btn-exer-comp" class="button" type="button">Completed Exercise</button>
-          <button id="btn-exer-cancel" class="button hollow" type="button">Cancel</button>
-        </div>
-      </div>
-  `;
+    </div>`;
   exerciseInfoEL.appendChild(exerciseInfo);
   document
     .querySelector("#btn-exer-comp")
@@ -100,7 +99,11 @@ function renderExerciseInfo(exercise) {
 
 //
 function saveExercise(event) {
-  console.log("test");
+  const exerciseName = document.querySelector("#card-exer-name").textContent;
+
+  saveEventDailyLog("exercise", exerciseName);
+  updateDayEntry("exercise", exerciseName);
+  exerciseInfoEL.innerHTML = "";
 }
 
 //

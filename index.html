@@ -36,7 +36,7 @@
               <a class="postlogin" id="foodNav" href="#foodNav">Recipes</a>
             </li>
             <li>
-              <a class="postlogin" id="historyNav" href="#history">History</a>
+              <a class="postlogin" id="historyNav" href="#historyNav">History</a>
             </li>
             <li>
               <a class="postlogin" id="logout" href="#logout">Logout</a>
@@ -62,8 +62,8 @@
         </div>
     </marquee>
     <div id="intro">
-      <p>
-        Welcome to our Food and Fitness App! If you are ready to begin your
+      <p class="grid-container">
+        Welcome to our Food and Fitness App! <br> If you are ready to begin your
         new health journey click 'continue'
       </p>
     </div>
@@ -91,15 +91,13 @@
   <!-- Welcome -->
   <div class="welcome">
     <div class="welcomeDisplay">
-      <!-- Move h2, h3 into workselection area -->
-      <h2>Welcome <span id="result"></span>!</h2>
-      <h3>Choose an area of focus</h3>
     </div>
-    <!-- </div> -->
+
 
     <!-- Workout Selection Section -->
     <div class="exerciseTable" id="exerciseTable">
-
+      <h2>Welcome <span id="result"></span>!</h2>
+      <h3>Choose an area of focus</h3>
       <div class="workout-selection">
         <div class="grid-container">
           <ul id="muscle-groups" class="list-group">
@@ -116,9 +114,6 @@
 
         <div class="grid-container">
           <ul id="muscle-group-exercises" class="list-group">
-            <a href="#" class="card-exer list-group-item">
-              <p>Exercise Name</p>
-            </a>
           </ul>
         </div>
 
@@ -132,29 +127,45 @@
   <div class="foodTable" id="foodTable">
     <h2>Hope you're hungry!</h2>
     <h3>What would you like to eat?</h3>
-    <div class="container">
+    <div id="food-container" class="container">
       <div class="jumbotron">
         <form>
-          <div class="">
-            <label for="exampleInputEmail1">Enter your food of choice</label>
-            <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="exampleInputEmail1">Enter your food of choice</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="button1" class="input-group-button">
+              <button id="btn1" class="btn btn-primary" type="submit">
+                Submit
+              </button>
+            </div>
           </div>
-          <button id="btn1" class="" type="submit">Submit</button>
         </form>
       </div>
-      <a href="" id="url">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 id="recipie" class="card-Recipie"></h5>
-          </div>
-          <img id="image" src="" alt="" />
-        </div>
-      </a>
+
+      <div id="recipeContainer" class="grid-container">
+      </div>
     </div>
   </div>
 
   <!-- History -->
-  <div class="history" id="history">
+  <div class="historyTable" id="historyTable">
+    <h2>Daily Log</h2>
+    <h3>Check out all you've done</h3>
+
+    <div class="grid-container">
+      <table class="hover">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Exercises</th>
+            <th>Recipes</th>
+          </tr>
+        </thead>
+
+        <tbody id="log-table">
+        </tbody>
+      </table>
+    </div>
   </div>
 
 
@@ -166,6 +177,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <!-- JS: Custom -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/log.js"></script>
   <script src="./assets/js/workout.js"></script>
   <script src="./assets/js/script2.js"></script>
 </body>
