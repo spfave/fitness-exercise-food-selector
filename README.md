@@ -25,9 +25,9 @@ SO THAT I am targeting all areas and keeping my diet clean
 
 &nbsp;
 ## Screenshots of our Web Application:
-![Home Page](assets\images\screenshot1.PNG)
-![User Sign-In Page](assets\images\screenshot2.PNG)
-![Exercise and Recipe Page](assets\images\screenshot3.PNG)
+![Home Page](./assets/images/screenshot1.PNG)
+![User Sign-In Page](./assets/images/screenshot2.PNG)
+![Exercise and Recipe Page](./assets/images/screenshot3.PNG)
 
 
 &nbsp;
