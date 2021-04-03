@@ -13,6 +13,7 @@ h1 {
 a {
   color: white;
 }
+
 /*Icon bar in header*/
 .nav {
   float: right;
@@ -45,6 +46,7 @@ p {
   font-size: 30px;
   padding-top: 3%;
 }
+
 /*Photos displayed on page*/
 .row {
   display: flex;
@@ -78,6 +80,7 @@ p {
 .userForm {
   display: none;
   text-align: center;
+  margin-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -92,6 +95,7 @@ p {
 }
 .welcome {
   display: none;
+  margin-top: 50px;
 }
 h2 {
   margin-top: 0%;
@@ -135,6 +139,7 @@ h3 {
     font-size: 15px;
   }
 }
+
 /* Workout Section */
 .workout-selection {
   margin-bottom: 20px;
@@ -150,6 +155,7 @@ h3 {
   background-color: #f3f3f3;
   color: #333333;
 }
+
 /* Muscle Groups */
 #muscle-groups.list-group a {
   display: inline-block;
@@ -198,6 +204,34 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Food */
+#form-group {
+  padding: 10;
+}
+
+#recipeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#btn1 {
+  background-color: grey;
+  display: block;
+  /* margin-left: auto;
+      margin-right: auto; */
+  background-color: #5e5e5e;
+  padding: 3px;
+  margin: 5px;
+  color: #fefefe;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+#food-container {
+  margin-top: 10px;
+}
+
 /* Recipe Form*/
 .foodTable {
   display: none;
@@ -208,4 +242,22 @@ h3 {
   text-align: center;
   margin-top: 0%;
   font-size: 25px;
+}
+
+/* History Section */
+.historyTable {
+  display: none;
+  margin-top: 50px;
+}
+
+#historyTable table thead tr {
+  background-color: #8c81ae;
+  color: rgb(255, 255, 255);
+}
+
+#log-table p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
